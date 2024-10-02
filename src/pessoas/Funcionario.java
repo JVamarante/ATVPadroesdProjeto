@@ -64,14 +64,6 @@ public class Funcionario extends Pessoa {
         this.dataAdmissao = LocalDate.parse(dataAdmissaoStr, formatter); // Usando o formatter para o formato dd/MM/yyyy
     }
 
-    // Método para reajustar o salário
-    public void reajustarSalario() {
-        System.out.println("Informe o percentual de reajuste do salário: ");
-        double percentual = Double.parseDouble(leitor.nextLine());
-        this.salario += this.salario * (percentual / 100);
-        System.out.println("Salário reajustado para: " + this.salario);
-    }
-
     @Override
     public String toString() {
         return "Funcionario{" +

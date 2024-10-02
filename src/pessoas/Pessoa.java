@@ -31,7 +31,7 @@ public class Pessoa {
         int ano = leitor.nextInt();
         this.dataNascimento = LocalDate.of(ano, mes, dia);
 
-        leitor.nextLine(); // Consumir o newline residual após o nextInt()
+        leitor.nextLine();
 
         this.endereco = new Endereco();
         this.endereco.cadastrar();

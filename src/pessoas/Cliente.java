@@ -33,8 +33,7 @@ public class Cliente extends Pessoa {
 
         System.out.println("Informe a profissão do cliente: ");
         try {
-            // Corrigido: agora estamos atribuindo ao atributo da classe, não criando uma nova variável local
-            this.profissao = Profissao.valueOf(leitor.nextLine().toUpperCase()); // Converte a entrada para maiúsculas
+            this.profissao = Profissao.valueOf(leitor.nextLine().toUpperCase());
         } catch (IllegalArgumentException e) {
             System.out.println("Profissão inválida. Certifique-se de que a profissão existe na enumeração.");
         }
